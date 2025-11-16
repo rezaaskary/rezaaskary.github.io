@@ -1,124 +1,90 @@
+# Mohammad Reza Askari
 
-# Reza Askari, Ph.D.
-
-**Senior Data Scientist | Senior Machine Learning Engineer**  
-Ellicott City, Maryland, USA  
-📧 reza.askary99@gmail.com  
-
-[GitHub](https://github.com/rezaaskary) |  
-[Google Scholar](https://scholar.google.com/citations?hl=en&user=njl6K6VfGlAC) |  
-[LinkedIn](https://linkedin.com/in/reza-askari-b61262a4) |  
-[HuggingFace](https://huggingface.co/RezaAskari)
+*Data Scientist | 🤖 AI/ML Engineer | Researcher*
+<br>
+*"Transforming biological signals into digital insights, one algorithm at a time."*
 
 ---
 
-## About Me
+### About Me
 
-I am a Senior Data Scientist with over **3.5 years of industry experience** and **5+ years of academic training**, specializing in **machine learning**, **probabilistic modeling**, **time-series forecasting**, and **sensor-based systems**. My work spans research and production in regulated and real-time settings, especially in the context of diabetes technology and medical devices.
+I am a passionate developer and researcher with a strong interest in AI, Machine Learning, Probabilistic Modeling, Biomedical Signal Processing, and Control Engineering. I am currently based in Ellicott City, MD, and work at Novo Nordisk.
 
-I design and build **large-scale ML systems**, from algorithm development to cloud-native deployment (AWS, GCP, Databricks). I also work on **agentic AI workflows**, reinforcement-learning-style systems, and RAG pipelines.
+My work focuses on bridging the gap between human physiology and artificial intelligence, specializing in biomedical signal processing, wearable technology, and the application of machine learning in healthcare.
 
----
-
-## Experience
-
-### Senior Data Scientist — Novo Nordisk  
-*Boston, MA* — June 2023 to October 2025  
-- Built a **multi-agent RAG system** (LangChain + LangGraph, V-model aligned) for FDA-regulated document workflows.  
-- Developed a scalable **Databricks pipeline** integrating 25+ clinical trials (~17,000 participants).  
-- Fine-tuned a **1.5B-parameter LLM** (DeepSeek distilled) for insulin-dosing assistive agents.  
-- Designed a **RAG-based labeling system** for clinical trial data.  
-- Implemented **hierarchical Bayesian inference** to optimize a SaMD insulin-dosing algorithm.
-
-### Corporate Research Scientist — Novo Nordisk  
-*Seattle, WA* — August 2021 to August 2022  
-- Led the probabilistic optimization pipeline for a **Human Digital Twin** platform, achieving ~60× speedup in vectorized simulation.  
-- Built multi-scale **in silico PK/PD models** for insulin candidate evaluation.
-
-### Graduate Research Assistant — Illinois Institute of Technology  
-*Chicago, IL* — August 2018 to April 2023  
-- Developed deep learning models for **activity detection** from biosensor data (Empatica E4).  
-- Designed an **MPC-based insulin control algorithm** using continuous glucose monitor (CGM) data plus wearable sensors.
+**Find me online:**
+* **LinkedIn:** [in/mohammad-reza-askari-b61262a4](https://www.linkedin.com/in/mohammad-reza-askari-b61262a4)
+* **ResearchGate:** [researchgate.net/profile/Mohammad-Reza-Askari](https://www.researchgate.net/profile/Mohammad-Reza-Askari)
+* **GitHub:** [@rezaaskary](https://github.com/rezaaskary)
+* **Hugging Face:** [huggingface.co/MohammadReza99](https://huggingface.co/MohammadReza99)
+* **Twitter:** [@Mohamma48525561](https://twitter.com/Mohamma48525561)
 
 ---
 
-## Technical Skills
+### Research Interests & Expertise
 
-- **Languages:** Python, R, SQL, MATLAB, C++  
-- **ML / Probabilistic Frameworks:** PyTorch, TensorFlow, JAX, PyMC, TF-Probability  
-- **AI / Agentic Systems:** LLMs, RAG, LangChain, multi-agent workflows  
-- **Cloud & Data:** AWS, Azure, GCP, Databricks, Docker, Linux  
-- **Modeling Specialties:** Bayesian inference, real-time systems, sensor-fusion, PK/PD modeling
+My expertise lies at the intersection of data science, software engineering, and computational biology.
 
----
+**Core Competencies:**
+* **Biomedical Signal Processing:** Extracting meaningful patterns from physiological data.
+* **Deep Learning & AI:** Building intelligent systems (CNNs, RNNs, LSTMs, Transformers) for healthcare applications.
+* **Wearable Technology:** Developing algorithms for real-time biosignal analysis.
+* **Data Science:** Transforming complex datasets into actionable insights.
+* **Systems & Control Engineering:** System identification and control design.
+* **Time-Series Analysis:** Specialized in temporal pattern recognition, forecasting, and human digital twins.
+* **RAG & Graph RAG:** Retrieval-Augmented Generation with knowledge graphs and semantic search.
+* **Image-to-Image Translation:** Advanced computer vision for medical imaging and visual transformations.
 
-## Education
-
-- **Ph.D. in Chemical Engineering**, Illinois Institute of Technology  
-  Focus: real-time ML for glucose prediction & insulin regulation in Type-1 Diabetes  
-- **M.Sc. in Chemical Engineering**, Sharif University of Technology  
-  Focus: adaptive nonlinear control using fuzzy logic  
-- **B.Sc. in Chemical Engineering**, Ferdowsi University of Mashhad  
-
----
-
-## Publications
-
-Here are selected publications. For full list, see my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=njl6K6VfGlAC).
-
-| Year | Title | Venue / Journal |
-|---|---|---|
-| 2023 | *Title of Publication 1* | Journal / Conference Name |
-| 2022 | *Title of Publication 2* | Journal / Conference Name |
-| 2021 | *Title of Publication 3* | Journal / Conference Name |
-| … | … | … |
-
-> **Note:** You should replace the titles / venues above with your actual publications. You can copy from your Google Scholar page.
+**Current Focus:**
+* 💊 **Computational Drug Discovery:** Leveraging AI/ML for drug design and molecular property prediction.
+* 🧬 **Protein Structure Analysis:** Using deep learning for protein folding and drug-target interaction prediction.
+* 🔬 **Molecular Generation:** Developing generative models for novel drug compound synthesis.
+* 🤖 **RAG Systems for Drug Discovery:** Building intelligent knowledge retrieval for pharmaceutical research.
 
 ---
 
-## Patents
+### Technical Skills
 
-- **Hybrid PK-Transformer Model**: Prediction of gastrointestinal adverse events in GLP-1 users from heterogeneous clinical & sensor data (with Novo Nordisk).
-
----
-
-## Projects (GitHub Highlights)
-
-Here are some of my notable open-source / research projects on GitHub:  
-
-- **Optimization & Probabilistic Modeling Package**  
-  High-performance probabilistic programming library built on **JAX** for scalable Bayesian inference and optimization.  
-  → Repository: `Optimization-and-probabilistic-modeling`  
-
-- **[Other Project Name]**  
-  _Short description of the project, the problem it solves, and your role._  
-  → Repository: `...`
-
-- **[Another Project]**  
-  _Another description …_  
-  → Repository: `...`
-
-- **Activity Prediction from Wearable Sensors**  
-  Deep learning models for classifying physical activities using biosensor data (e.g., PPG, accelerometer, temperature).
-
-*(Optionally, you can embed GitHub badges, star counts, or links for each project.)*
+* **Programming Languages:** Python, JavaScript, R, MATLAB, SQL
+* **AI/ML & Data Science:** TensorFlow, Keras, Scikit-Learn, PyMC, SciPy, RAG, Graph RAG, OpenCV
+* **Dev Tools & Platforms:** Git, GitHub, GitLab, VS Code, PyCharm
+* **Databases & Cloud:** MySQL, Azure ML, Domino
 
 ---
 
-## Honors & Awards
+### Featured Projects
 
-- **Sigma Xi Research Award – Researcher of the Year (2023)**  
-- **AIChE Teaching Excellence Award (2020)**  
+Here are a few of my pinned projects from GitHub.
 
----
-
-## Contact
-
-If you’d like to collaborate, discuss research, or explore opportunities:
-
-📧 **reza.askary99@gmail.com**  
-🌐 **[rezaaskary.github.io](https://rezaaskary.github.io)**  
+* **[Optimization-and-probabilistic-modeling](https://github.com/rezaaskary/Optimization-and-probabilistic-modeling)**
+    * A probabilistic programing library empowered with jax to speed up large simulations (still in progress!).
+* **[PyTorch_Compile_Module](https://github.com/rezaaskary/PyTorch_Compile_Module)**
+    * A wrapper written to ease compiling PyTorch models.
 
 ---
 
+### Publications
+
+**(Placeholder)** I was unable to retrieve your publication list from Google Scholar. Please add your papers here. You can follow the format below:
+
+1.  **Paper Title.** *Author 1, Author 2, **Reza Askari**, Author 4.* *Conference or Journal Name (Year)* *\[[PDF](link-to-pdf.com)\] \[[Code](link-to-code.com)\] \[[Slides](link-to-slides.com)\]*
+
+2.  **Another Paper Title.** *Author 1, **Reza Askari**, Author 3.* *Conference or Journal Name (Year)* *\[[PDF](link-to-pdf.com)\]*
+
+---
+
+### Experience & Education
+
+**(Placeholder)** Please add your professional experience and educational background from your resume here.
+
+**Example:**
+
+**Novo Nordisk**
+* *Senior AI/ML Engineer (Date - Present)*
+    * *Description of your role and responsibilities...*
+
+**[University Name]**
+* *Ph.D. in [Your Field] (Year)*
+* *M.Sc. in [Your Field] (Year)*
+
+---
