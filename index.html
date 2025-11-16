@@ -1,1 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Reza Askari | AI/ML Researcher</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <style>
+        /* --- Base Styles --- */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --primary-color: #0056b3; /* A professional blue */
+            --secondary-color: #2c3e50; /* Dark sidebar */
+            --light-gray: #f4f4f4;
+            --sidebar-text: #ecf0f1;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* --- Sidebar Navigation --- */
+        .sidebar {
+            width: 300px;
+            background-color: var(--secondary-color);
+            color: var(--sidebar-text);
+            position: fixed;
+            height: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #34495e;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .sidebar h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            margin: 10px 0 5px 0;
+        }
+
+        .sidebar h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1em;
+            font-weight: 300;
+            color: #bdc3c7;
+            margin-bottom: 30px;
+        }
+
+        .sidebar nav {
+            width: 100%;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar nav li {
+            margin: 18px 0;
+        }
+
+        .sidebar nav a {
+            color: var(--sidebar-text);
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar nav a:hover,
+        .sidebar nav a.active {
+            color: var(--primary-color);
+        }
+
+        .social-links {
+            margin-top: auto; /* Pushes social links to the bottom */
+        }
+
+        .social-links a {
+            color: #bdc3c7;
+            font-size: 1.6em;
+            margin: 0 12px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Main Content --- */
+        .main-content {
+            margin-left: 300px; /* Same as sidebar width */
+            padding: 50px;
+            width: calc(100% - 300px);
+        }
+
+        .section {
+            padding-top: 20px;
+            margin-bottom: 40px;
+            background: var(--bg-color);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2em;
+            color: var(--secondary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* --- Specific Sections --- */
+
+        /* About Section */
+        #about p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        
+        .research-interests ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .research-interests li {
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Publications Section */
+        .publication-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .publication-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px dashed #ccc;
+        }
+        
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .publication-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .publication-authors {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .publication-authors b { /* To highlight your name */
+            font-weight: 700;
+            color: #000;
+        }
+
+        .publication-venue {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .publication-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-right: 15px;
+            transition: opacity 0.3s;
+        }
+        
+        .publication-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* Projects Section */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .project-card {
+            background: var(--light-gray);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+        }
+        
+        .project-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .project-desc {
+            font-size: 1em;
+            margin: 15px 0;
+        }
+        
+        .project-link {
+            text-decoration: none;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .project-link i {
+            margin-right: 5px;
+        }
+        
+        /* CV Download Button */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #00418a;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 30px;
+            }
+
+            .sidebar nav {
+                display: none; /* Simplification for mobile. Could be a hamburger menu. */
+            }
+
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="https://via.placeholder.com/150" alt="Mohammad Reza Askari" class="profile-img">
+            
+            <h1>Mohammad Reza Askari</h1>
+            <h2>AI/ML Engineer at Novo Nordisk</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="#about" class="active">About Me</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience & CV</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <a href="https://scholar.google.com/citations?hl=en&user=njl6K6VfGlAC" target="_blank" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="https://github.com/rezaaskary" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohammad-reza-askari-b61262a4" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://huggingface.co/MohammadReza99" target="_blank" title="Hugging Face"><i class="fa-solid fa-robot"></i></a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>
+                    I'm Mohammad Reza Askari, a passionate developer and researcher with a strong interest in AI, Machine Learning, Probabilistic Modeling, Biomedical Signal Processing, and Control Engineering. 
+                </p>
+                <p>
+                    I specialize in bridging the gap between human physiology and artificial intelligence. My work focuses on biomedical signal processing, wearable technology, and building intelligent systems for healthcare applications.
+                </p>
+                
+                <div class="research-interests">
+                    <h3>Research Interests</h3>
+                    <ul>
+                        <li>Biomedical Signal Processing</li>
+                        <li>Deep Learning (CNN, RNN, Transformers)</li>
+                        <li>Wearable Technology</li>
+                        <li>Time-Series Analysis</li>
+                        <li>Computational Drug Discovery</li>
+                        <li>RAG & Graph RAG</li>
+                        <li>Image-to-Image Translation</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="publications" class="section">
+                <h2>Publications</h2>
+                <ul class="publication-list">
+                    
+                    <li class="publication-item">
+                        <div class="publication-title">A Novel Deep Learning Approach for [Paper Topic]</div>
+                        <div class="publication-authors">
+                            Author One, <b>Mohammad Reza Askari</b>, Author Three
+                        </div>
+                        <div class="publication-venue">
+                            <em>International Conference on Machine Learning (ICML)</em>, 2024
+                        </div>
+                        <div class="publication-links">
+                            <a href="#" target="_blank">[ PDF ]</a>
+                            <a href="#" target="_blank">[ Code ]</a>
+                            <a href="#" target="_blank">[ Slides ]</a>
+                        </div>
+                    </li>
+                    
+                    <li class="publication-item">
+                        <div class="publication-title">Probabilistic Modeling for [Another Paper Topic]</div>
+                        <div class="publication-authors">
+                            Author A, Author B, <b>Mohammad Reza Askari</b>
+                        </div>
+                        <div class="publication-venue">
+                            <em>Journal of Biomedical Engineering</em>, 2023
+                        </div>
+                        <div class="publication-links">
+                            <a href="#" target="_blank">[ PDF ]</a>
+                            <a href="#" target="_blank">[ DOI ]</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </section>
+            
+            <section id="projects" class="section">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                
+                    <div class="project-card">
+                        <h3 class="project-title">Optimization-and-probabilistic-modeling</h3>
+                        <p class="project-desc">
+                            A probabilistic programming library empowered with JAX to speed up large simulations (in progress).
+                        </p>
+                        <a href="https://github.com/rezaaskary/Optimization-and-probabilistic-modeling" class="project-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3 class="project-title">PyTorch_Compile_Module</h3>
+                        <p class="project-desc">
+                            A simple wrapper written to ease the process of compiling PyTorch models.
+                        </p>
+                        <a href="https://github.com/rezaaskary/PyTorch_Compile_Module" class="project-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                    
+                    </div>
+            </section>
+
+            <section id="experience" class="section">
+                <h2>Experience & CV</h2>
+                <p>
+                    I am currently an AI/ML Engineer at Novo Nordisk, focusing on computational drug discovery and advanced data analysis.
+                </p>
+                <p>
+                    For a detailed overview of my professional experience, education, and technical skills, please download my full curriculum vitae.
+                </p>
+                <br>
+                <a href="Reza_Askari_CV.pdf" class="btn" target="_blank">
+                    <i class="fa-solid fa-download"></i> Download Full CV
+                </a>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.sidebar nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
