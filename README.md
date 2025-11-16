@@ -1,6 +1,3 @@
----
-title: Reza Askari, Ph.D.
----
 
 # Reza Askari, Ph.D.
 
